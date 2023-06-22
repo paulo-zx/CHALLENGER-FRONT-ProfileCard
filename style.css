@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+    --Darkcyan: hsl(185, 75%, 39%);
+    --Verydarkdesaturatedblue: hsl(229, 23%, 23%);
+    --Darkgrayishblue: hsl(227, 10%, 46%);
+    --Darkgray: hsl(0, 0%, 59%);
+}
+
+*{
+    padding: 0;
+    margin: 0;   
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.main{
+    width: 100%;
+    min-height:100vh;
+    background-color: var(--Darkcyan);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+    background-image: 
+    url('./images/bg-pattern-top.svg'),
+    url('./images/bg-pattern-bottom.svg');
+    background-position: -110% 140%, 200% -70%;   
+    background-repeat: no-repeat;
+    
+    
+}
+
+.box{
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    
+}
+
+.top1{
+    height: 120px;
+    background-image: url('./images/bg-pattern-card.svg');
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;  
+    padding-top: 35%;
+}
+
+.im1{
+    border-radius: 50%;
+    border: solid white 3px;
+    width: 80px;
+    bottom:100%;
+    
+    
+}
+
+.top2{
+    height: 120px;
+    background-color:white;
+    padding-top:20px ;
+    gap: 100px;
+    padding-top: 22%;
+}
+
+.top3{
+    border-top:solid gray 1px;
+    background-color: white;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    column-gap: 20px;
+
+}
+
+.top2-div{
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+    justify-content: center;
+    gap: 5%;
+}
+
+.top2-h1{
+    font-size: medium;
+}
+
+.top2h2-1{
+    color: var(--Darkgray);
+    font-weight: 200;
+    font-size: medium;
+
+}
+
+.top2h2-2{
+    color: var(--Darkgray);
+    font-size: 15px;
+    font-weight: 100;
+    margin-top: 3%;
+}
+
+.top3 h1{
+    font-size: 15px;
+    font-weight: 1000;
+}
+
+.top3 h2{
+    color: var(--Darkgray);
+    font-size: 10px;
+    font-weight: 75;
+    letter-spacing: 1px;
+}
+
+/* Responsive */
+
+
+@media(max-width:1440px){
+    .main{
+       /* background-position: -30% 250%, 140% -180%;*/
+         background-position: -52% -469px, 550px 453px;
+    }
+
+}
+
+
+
+@media(max-width:375px){
+    .main{
+        background-position: 120% -659px, 300px 152px;;
+    }
+
+}
